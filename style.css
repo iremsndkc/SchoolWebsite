@@ -1,0 +1,297 @@
+/*hepsinin özelliklerini sıfırla*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(rgba(8, 5, 30, 0.442), rgba(5, 5, 30, 0.5)),
+    url(projeimg/okul.jpeg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a img {
+  width: 175px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+nav div ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav div ul li {
+  padding: 10px;
+}
+nav div ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(232, 169, 201);
+}
+
+nav div ul li a::after {
+  content: "";
+  background-color: purple;
+  display: block;
+  width: 0;
+  height: 3px;
+  margin-top: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav div ul li a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.bi-menu-up {
+  color: rgb(13, 52, 12);
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.bi-menu-up:hover {
+  font-size: 35px;
+  transition: 0.3s;
+}
+
+.bi-menu-up {
+  display: none;
+}
+
+/* text box */
+.text-box {
+  width: 90%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 60px;
+}
+.text-box p {
+  margin: 10px;
+  font-size: 15px;
+}
+.hero-btn {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 12px 34px;
+  border: 1px solid #fff;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  background-color: rgb(6, 65, 138);
+  transition: 0.3sn;
+}
+
+/*ortak kullanımlar*/
+.align-container {
+  background-color: rgb(18, 52, 2);
+  width: 100%;
+  margin: auto;
+  padding-top: 60px;
+  text-align: center;
+}
+.row {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-item {
+  background-color: antiquewhite;
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+.açıklama-item {
+  background-color: burlywood;
+}
+
+.açıklama-item:hover {
+  text-decoration: underline;
+  text-underline-position: auto;
+}
+
+/*kurslar*/
+section h1 {
+  font-size: 35px;
+}
+section p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+}
+
+section .row p {
+  color: black;
+}
+
+section h3 {
+  margin: 10px 0;
+}
+.course-col:hover {
+  box-shadow: 0 0 30px gray;
+  transition: 0.3s;
+}
+
+/*kampüsler*/
+.campus-col {
+  padding: 0;
+  position: relative;
+  border-radius: 10px;
+}
+
+.campus-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.layer:hover {
+  background-color: rgba(6, 6, 109, 0.5);
+  transition: 0.3s;
+}
+
+.layer h5 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  opacity: 0;
+}
+
+.layer:hover h5 {
+  bottom: 50%;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+/*yerlesklerimiz*/
+.facilities-col {
+  text-align: left;
+  padding: 0;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p {
+  margin: 16px 0;
+}
+
+/*yorumlar*/
+.testemonial-col {
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  background-color: rgb(16, 205, 16);
+}
+.testemonial-col img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+.testemonial-col p {
+  padding: 0;
+}
+.testemonial-col h2 {
+  margin-top: 15px;
+}
+.testemonial-col .bi {
+  color: white;
+}
+/*acilulasımalanı*/
+.ua {
+  color: white;
+  background: linear-gradient(rgba(8, 5, 30, 0.442), rgba(5, 5, 30, 0.5)),
+    url(projeimg/arkaplan.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ua h1 {
+  margin-bottom: 40px;
+  padding: 0;
+}
+/*foteer*/
+footer {
+  padding: 30px 0;
+}
+footer h1 {
+  margin: 25px 0;
+}
+.icons {
+  margin: 10px;
+}
+.icons .bi {
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 20px 10px;
+}
+.bi-heart-fill {
+  color: white;
+}
+
+/* responsive */
+@media (max-width: 750px) {
+  .nav-links {
+    display: none;
+  }
+  .bi-menu-up {
+    display: block;
+  }
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .ua h1 {
+    font-size: 25px;
+  }
+}
